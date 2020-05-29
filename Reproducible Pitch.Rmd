@@ -1,0 +1,55 @@
+---
+title: "Course Project - Reproducible Pitch"
+author: "BSantos"
+date: "5/29/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Reproducible Pitch
+
+- Use the arrow keys to navigate through this presentation.  
+- In this presentation, we will describe how "Meters & Inches converter App" works.
+
+## Aplication Overview
+
+In this application, there are two sliders.  
+
+- **Slider 1:** User to select length in meters.  
+Minimum: 0.01.  
+Maximum: 100.  
+  
+- **Slider 2:** User to select length is inches.  
+Minimum: 1.  
+Maximum: 100.  
+
+Converted value will be shown in respective field.  
+Both sliders are independed, meaning, user does not have to use both liders in order for the App to work.
+
+
+## How does it work?
+**Example 1:**  
+Converting a length from meters to inches:  
+```{r, echo=TRUE}
+    length_meters <- 2
+    length_inc <- length_meters/0.0254
+    length_inc
+```
+**Example 2:**  
+Converting a length from meters to inches:  
+```{r, echo=TRUE}
+    length_inches <- 10
+    length_m <- length_inches*0.0254
+    length_m
+```
+
+## Where to find the App?
+
+- The application can be found here:  
+<https://b-santos.shinyapps.io/Meters_Inches_Converter>  
+
+- The source code can be found here:
+<https://github.com/BSantosT/Developing-Data-Products>  
